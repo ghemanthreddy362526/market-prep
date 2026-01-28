@@ -80,7 +80,9 @@ export default function Today() {
 
 function PlanCard({ title, content }) {
   return (
-    <div className="bg-white rounded-2xl p-6 shadow-sm border border-neutral-200">
+<div className="bg-white rounded-2xl p-6 shadow-sm border border-neutral-200
+  transition-all duration-300 ease-out
+  hover:-translate-y-1 hover:shadow-lg">
       <h4 className="font-semibold text-lg">{title}</h4>
       <p className="mt-2 text-neutral-600">{content}</p>
     </div>
