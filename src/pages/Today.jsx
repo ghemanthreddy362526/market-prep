@@ -78,3 +78,11 @@ export default function Today() {
   );
 }
 
+function PlanCard({ title, content }) {
+  return (
+    <div className="bg-white rounded-2xl p-6 shadow-sm border border-neutral-200">
+      <h4 className="font-semibold text-lg">{title}</h4>
+      <p className="mt-2 text-neutral-600">{content}</p>
+    </div>
+  );
+}
