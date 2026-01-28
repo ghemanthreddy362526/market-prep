@@ -120,6 +120,28 @@ export default function Today() {
     </a>
   </div>
 </section>
+{/* CALL TO ACTION */}
+<section className="max-w-7xl mx-auto px-6 mt-40 mb-32 text-center">
+  <h3 className="text-4xl font-light">
+    Discipline compounds faster than profits
+  </h3>
+
+  <p className="mt-6 text-neutral-600 max-w-xl mx-auto">
+    Start your trading day with clarity. End it with learning.
+  </p>
+
+  <div className="mt-10">
+    <a
+      href="/journal"
+      className="inline-block bg-black text-white px-8 py-4 rounded-full
+      font-medium transition-all duration-300
+      hover:-translate-y-0.5 hover:shadow-xl
+      active:translate-y-0 active:scale-[0.98]"
+    >
+      Start Today’s Journal
+    </a>
+  </div>
+</section>
 
 
       {/* PRE-MARKET PLAN */}
