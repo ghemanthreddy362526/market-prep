@@ -1,23 +1,13 @@
+import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 import Stat from "../components/Stat";
 
 export default function Today() {
   return (
     <div className="min-h-screen bg-neutral-100 antialiased">
-
+      
       {/* NAVBAR */}
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <h1 className="text-xl font-semibold tracking-wide">
-          MARKET PREP
-        </h1>
-
-        <Link
-          to="/journal"
-          className="bg-black text-white px-4 py-2 rounded-full text-sm"
-        >
-          Today’s Analysis
-        </Link>
-      </nav>
+      <Navbar />
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 mt-6">
@@ -89,15 +79,3 @@ export default function Today() {
   );
 }
 
-/* ===================== */
-/* REUSABLE CARD */
-/* ===================== */
-
-function PlanCard({ title, content }) {
-  return (
-    <div className="bg-white rounded-2xl p-6 shadow-sm border border-neutral-200">
-      <h4 className="font-semibold text-lg">{title}</h4>
-      <p className="mt-2 text-neutral-600">{content}</p>
-    </div>
-  );
-}
